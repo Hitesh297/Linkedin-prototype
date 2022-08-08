@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap');
+header {
+    background-color: #6f6f6f;
+}
+
+#header-contents {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f2ef ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: Inter; */
+}
+
+#identity-backdrop h3 {
+    font-size: 10px;
+    color: #eef3f8;
+    font-weight: 300;
+    margin: 6px;
+}
+
+#nav-items {
+    display: flex;
+    list-style: none;
+    /* gap: 20px; */
+    margin: 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 21px 5px 21px;
+}
+
+.nav-item img {
+    border-radius: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+.nav-item-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item span {
+    font-size: 12px;
+}
+
+.nav-item svg {
+    color: #666666;
+    fill: #666666;
+}
+
+.nav-item svg:hover {
+    color: black;
+    fill: black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+}
+
+#logo {
+    height: 41px;
+    width: 41px;
+    color: #0a66c2;
+}
+
+#search {
+    background: #eef3f8;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 210px;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    /* padding-right: 200px; */
+    width: 371px;
+}
+
+#search-container svg {
+    padding: 8px;
+    background: #eef3f8;
+    border-radius: 5px;
+    color: #666666;
+    position: absolute;
+    margin-left: 1px;
+    width: 14px;
+    height: 14px;
+}
+
+#search-container input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 35px;
+    
+}
+
+#search-container input:focus {
+    width: 300px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* main, aside {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+} */
+
+.border-block {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: white;
+}
+
+#body-container {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin: 24px 0;
+    align-items: flex-start;
+}
+
+#search-container-body {
+    display: flex;
+    gap: 21px;
+    margin: 24px 200px;
+    align-items: flex-start;
+}
+
+#search-container-body main {
+    width: 40%;
+}
+
+#main {
+    width: 37%;
+    order: 2;
+}
+
+#panel-left {
+    order: 1;
+    width: 14%;
+    position: sticky;
+    top: 0;
+}
+
+#panel-right {
+    order: 3;
+    width: 21%;
+}
+
+.premium-bar {
+    background-color: #f8c77e;
+    height: 5px;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    width: 99%;
+}
+
+#identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#identity img {
+    position: absolute;
+    border-radius: 91px;
+    height: 80px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+#identity-backdrop {
+    height: 55px;
+    width: 100%;
+    background-color: #757575;
+}
+
+#profile-name {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#profile-name p{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+#cred {
+    font-size: 12px;
+    text-align: center;
+    padding: 9px 41px 20px 41px;
+    color: #00000099;
+}
+
+#connections {
+    width: 100%;
+    background-color: white;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#connections ul {
+    width: 90%;
+    margin: auto;
+    padding: 7px 0;
+}
+
+.connection-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.connection-count{
+    color: #0a66c2;
+    font-weight: 600;
+}
+
+.connection-description {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+#premium {
+    font-size: 13px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.border-top {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#premium ul {
+    width: 90%;
+    margin: auto;
+    padding: 14px 0;
+    list-style: none;
+}
+
+.premium-item {
+    display: flex;
+    align-items: center;
+}
+
+.premium-item svg {
+    height: 15px;
+    width: 15px;
+}
+
+#my-items {
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#my-items-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* padding-left: 9px; */
+    font-size: 13px;
+    padding: 14px 0 14px 9px;
+
+}
+
+#my-items-container svg {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#my-items-container span{
+    font-weight: 500;
+}
+
+#recent {
+    margin-top: 10px;
+    background: white;
+    /* padding: 10px; */
+    font-size: 13px;
+}
+
+.border-block-content {
+    padding: 15px;
+}
+
+.flex-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+.sidebar-headings {
+    font-size: 13px;
+    color: #0a66c2;
+}
+
+.show-more {
+    padding-left: 25px;
+}
+
+.flex-list-column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item-spacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#discover-more {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+#start-post img {
+    border-radius: 83px;
+    height: 47px;
+}
+
+#start-post button {
+    width: 100%;
+    border-radius: 37px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 48px;
+    margin-left: 10px;
+    text-align: left;
+    padding-left: 17px;
+    background: white;
+}
+
+.justify-spacearound {
+    justify-content: space-around;
+}
+
+.justify-spacebetween {
+    justify-content: space-between;
+}
+
+#post-photo svg{
+    color: #378fe9;
+}
+
+#post-video svg{
+    color: #5f9b41;
+}
+
+#post-event svg{
+    color: #c37d16;
+}
+
+#post-article svg{
+    color: #e16745;
+}
+
+.post-item {
+    gap: 15px;
+}
+
+#start-text {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grey-text {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#divider hr {
+    width: 81%;
+    margin-top: 10px;
+}
+
+#divider {
+    font-size: 13px;
+}
+
+.network-profile-pic {
+    border-radius: 29px;
+    height: 27px;
+    margin-right: 8px;
+}
+
+.post-profile-text {
+    font-size: 13px;
+}
+
+.grey-bottom-border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.network-like-section {
+    padding-bottom: 10px;
+}
+
+.post-profile-pic {
+    border-radius: 60px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.post-content-text {
+    font-size: 14px;
+}
+
+.post-content {
+    width: 94%;
+}
+
+.post-name {
+    font-weight: 500;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 10px;
+}
+
+.follow span, .follow svg {
+    color: #0a66c2;
+    font-weight: 500;
+}
+
+/* .post-likes img {
+    border: 1px solid white;
+} */
+
+.post-likes img:nth-child(2) {
+    transform: translateX(-6px);
+}
+
+.post-likes img:nth-child(3) {
+    transform: translateX(-11px);
+}
+
+.post-likes span {
+    transform: translateX(-11px);
+}
+
+.padding-top-bottom-10 {
+    padding: 10px 0;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+.post-share span {
+    padding-left: 3px;
+}
+
+.post-share {
+    padding: 10px 10px 0 10px;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.post-content-image {
+    width: 560px;
+    transform: translateX(-15px);
+}
+
+/* .news-list {
+    display: flex;
+    flex-direction: column;
+} */
+
+.bullet {
+    border-radius: 50%;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    margin: -7px 13px 1px 2px;
+    border: 3px solid rgba(0, 0, 0, 0.6)
+}
+
+.news-heading {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 6px;
+}
+
+.new-heading-sub {
+    font-size: 12px;
+}
+
+.sidebar-heading {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#news-show-more {
+    padding-left: 21px;
+}
+
+.flex-row-gap-10 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+#promoted {
+    margin-top: 10px;
+}
+
+.promoted-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.promoted-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.promoted-item img {
+    width: 42px;
+}
+
+.promoted-item h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.promoted-item span {
+    font-size: 10px;
+    line-height: 13px;
+    display: block;
+}
+
+#search-options {
+    display: flex;
+    gap: 11px;
+    margin: 0 2px;
+    padding: 10px 0 10px 194px ;
+    background-color: white;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#search-options button {
+    background-color: white;
+    border: 1px solid rgb(158 158 158 / 60%);
+    border-radius: 60px;
+    height: 32px;
+    padding: 0 13px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    
+}
+
+#search-options button:nth-child(1) {
+    border: 2px solid rgb(158 158 158 / 60%);
+}
+
+#search-options button:hover {
+    cursor: pointer;
+    background-color: rgba(198, 198, 198, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#left-options {
+    width: 100%;
+}
+
+.left-options-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.left-svg {
+    width: 20px;
+}
+
+.left-options-item :hover {
+    cursor: pointer;
+    color: #0a66c2;
+    fill: #0a66c2;
+}
+
+.golden-bar {
+    background: #f8c77e;
+    height: 4px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+.headings-new {
+    padding-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+#prepare-main p {
+    padding-left: 20px;
+}
+
+#skills-main p {
+    padding: 10px 0 10px 0;
+    margin: 0 0 0 20px;
+}
+
+#chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#salary-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+#salary-heading h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.linkedin-button {
+    background: white;
+    border-radius: 16px;
+    height: 34px;
+    padding: 0 15px;
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    font-weight: 500;
+    transition: 0.2s all ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.linkedin-button:hover {
+    cursor: pointer;
+    background-color: #ecf5ff;
+}
+
+#aboutux-image {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#aboutux-text-content, #more-skills {
+    display: none;
+}
+
+#see-more-skills:hover {
+    cursor: pointer;
+}
+
+#chart-indetail h4{
+    margin: 0;
+    color: #0a66c2;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.chart-indetail-item {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+#chart-indetail {
+    display: none;
+}
+
+#figma-details img {
+    width: 28px;
+    /* padding-left: 20px; */
+}
+
+#figma-details {
+    margin-left: 20px;
+    display: none;
+} 
+
+#skill-figma:hover{
+    cursor: pointer;
+}
+
+#figma-details p {
+    margin: 0;
+}
+
+.figma-selected {
+    color: #0a66c2;
+    border: none;
+}
+
+.text-details-right {
+    padding: 0 10px;
+}
+
+.blue {
+    color: #0a66c2;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+#careerpath-chart {
+    overflow: hidden;
+    height: 227px;
+    transition: all .5s ease-in-out;
+}
+
+.height-full {
+    height: 900px; 
+  }
+
+#careerpath-heading {
+    padding: 10px;
+}
+
+#see-more-careerpath:hover {
+    cursor: pointer;
+}
+
+.search-prepare-section {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.image-thumbnail {
+    height: 48px;
+}
+
+.search-prepare-left {
+    display: flex;
+    gap: 8px;
+}
+
+.circular-image-small {
+    height: 20px;
+    border-radius: 60px;
+}
+
+.flex-list-column-gap-3px {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.linkedin-button-selected {
+    background: #0a66c2;
+    border-radius: 16px;
+    height: 34px;
+    padding: 0 15px;
+    border: 1px solid #0a66c2;
+    color: white;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.linkedin-button-grey {
+    background: white;
+    border-radius: 16px;
+    height: 34px;
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.linkedin-button-gold {
+    background: white;
+    border-radius: 16px;
+    height: 34px;
+    padding: 0 15px;
+    border: 1px solid #f8ae40;
+    color: #f8ae40;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#skill-filters {
+    display: none;
+}
+
+#recommend-skills {
+    display: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#recommend-skills:hover {
+    cursor: pointer;
+}
+
+.greyscale {
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+#junior:hover {
+    cursor: pointer;
+}
+
+#more-details-junior {
+    display: none;
+}
+
+#mentor-learning {
+    border-top: 4px solid #f8c77e;
+}
+
+#mentor-headings {
+    display: flex;
+    gap: 20px;    
+}
+
+.mentor-image {
+    height: 45px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+#learning-container {
+    display: none;
+}
+
+#mentor-tab:hover, #learning-tab:hover {
+    cursor: pointer;
+}
+
+#community-section {
+    border-top: 4px solid #f8c77e;
+}
