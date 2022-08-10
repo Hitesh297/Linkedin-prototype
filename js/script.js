@@ -91,10 +91,16 @@ $("#junior").click(function () {
 });
 
 $("#left-option-mentors").click(function (e) { 
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#mentor-learning").offset().top
+    }, 1000);
     ShowMentors();
 });
 
 $("#left-option-learning").click(function (e) { 
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#mentor-learning").offset().top
+    }, 1000);
     ShowLearning();
 });
 
@@ -106,9 +112,7 @@ $("#learning-tab").click(function (e) {
 });
 
 function ShowMentors() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#mentor-learning").offset().top
-    }, 1000);
+   
     $("#mentors-container").fadeIn();
     $("#learning-container").hide();
     $("#learning-tab").addClass("grey-text");
@@ -117,9 +121,7 @@ function ShowMentors() {
 }
 
 function ShowLearning() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#mentor-learning").offset().top
-    }, 1000);
+   
     $("#learning-container").fadeIn();
     $("#mentors-container").hide();
     $("#mentor-tab").addClass("grey-text");
